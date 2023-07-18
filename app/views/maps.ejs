@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/maps.css" />
+    <title>Valorant: Maps</title>
+  </head>
+  <body>
+    <nav>
+        <ul>
+          <li><a href="/Champions">Champions</a></li>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </nav>
+    <h1>Liste des Maps</h1>
+    <section>
+
+      
+      <% maps.find(map => { %>
+        <div 
+          style="
+          background-image: url('<%=map.splash%>');
+          background-size: cover;
+          background-position: center;
+        "
+      > 
+      <a href="/maps/<%=map.displayName%>" target="_blank">
+      <h2><%= map.displayName %>
+         </h2>
+         </a>
+        
+       </div>
+       <% }) %>
+
+
+
+
+      <!-- splash pour le style ;) 
+      <div
+        style="
+          background-image: url('https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+         displayName 
+        <h2>Ascent</h2>
+        <a href="" target="_blank"> </a>
+      </div>
+      <div
+        style="
+          background-image: url('https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/splash.png');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <h2>Fracture</h2>
+        <a href="/maps/Ascent" target="_blank"> </a>
+      </div>
+      <div
+        style="
+          background-image: url('https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <h2>Ascent</h2>
+        <a href="/maps/Ascent" target="_blank"> </a>
+      </div>
+      <div
+        style="
+          background-image: url('https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <h2>Ascent</h2>
+        <a href="/maps/Ascent" target="_blank"> </a>
+      </div>
+      <div
+        style="
+          background-image: url('https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <h2>Ascent</h2>
+        <a href="/maps/Ascent" target="_blank"> </a>
+      </div>
+    </section>
+  </body>
+</html>
+-->

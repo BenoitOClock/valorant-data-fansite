@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/map.css" />
+    <!-- displayName -->
+    <title>Valorant: <%=clickedMap.displayName%></title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/champions">Champions</a></li>
+        <li><a href="/maps">Maps</a></li>
+      </ul>
+    </nav>
+    <!-- displayName -->
+    <h1><%= clickedMap.displayName%></h1>
+    <div class="container">
+      <div class="left-section">
+        <!-- splash -->
+        <img
+          src="<%= clickedMap.splash%>"
+          alt="Visuel"
+        />
+        <!-- displayIcon -->
+        <img
+          src="<%=clickedMap.displayIcon%>"
+          alt="Carte d'orientation"
+        />
+      </div>
+      <div class="right-section">
+        <h2>Liste des spots</h2>
+        <ul>
+          <% clickedMap.callouts.forEach((callout) => {%>
+            
+          <li>
+            <!-- callouts > regionName && superRegionName -->
+            <h3><%=callout.regionName%> <span><%=callout.superRegionName %></span></h3>
+            <ol>
+              <!-- callouts > location.x && location.y -->
+              <li><%=callout.location.x%></li>
+              <li><%=callout.location.y%></li>
+            </ol>
+          </li>
+          <% })%>
+          
+
+
+          <!--<li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+          <li>
+            <h3>Tree <span>A</span></h3>
+            <ol>
+              <li>X: 3980.9062</li>
+              <li>y: -5938.758</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>-->

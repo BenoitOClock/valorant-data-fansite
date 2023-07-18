@@ -1,0 +1,25 @@
+{
+  "name": "ludexo-valorant",
+  "version": "1.0.0",
+  "description": "Que la force soit avec vous ⭐🌟✨",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "expres",
+    "ejs",
+    "nodemon"
+  ],
+  "dependencies": {
+    "dayjs": "^1.11.9",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

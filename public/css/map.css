@@ -1,0 +1,115 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  max-height: 100vh;
+  background: #012;
+  margin: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #ff4656ff;
+}
+
+h1 {
+  color: #ff4656ff;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left-section {
+  width: 65%;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+.left-section img {
+  text-align: center;
+  width: 95%;
+}
+
+.right-section {
+  width: 35%;
+  padding: 0 15px;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff4656ff;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #2196f3ff;
+  text-align: start;
+  margin: 0;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+h3 > span {
+  color: #ff4656ff;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+.right-section > ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.right-section ol {
+  margin: 0;
+  padding: 0;
+  margin: 15px 25px;
+}
+
+.right-section > ul > li {
+  list-style: none;
+  margin: 0;
+  text-align: start;
+  color: #fff;
+}
+
+.right-section ul > li > ol > li {
+  margin: 0;
+  text-align: start;
+  color: #fff;
+}

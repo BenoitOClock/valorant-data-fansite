@@ -1,0 +1,111 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  max-height: 100vh;
+  background: #012;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #ff4656ff;
+}
+
+h1 {
+  color: #ff4656ff;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 0;
+}
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.champion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.description {
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  justify-content: center;
+}
+.description > img {
+  cursor: pointer;
+  max-height: 77vh;
+  max-width: 65vw;
+}
+
+p {
+  color: rgb(255, 144, 144);
+  width: 100%;
+  font-size: 12px;
+}
+
+.abilities {
+  max-width: 35%;
+  text-align: start;
+}
+
+.abilities > ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.abilities > h2 {
+  color: #2196f3ff;
+}
+
+.abilities > ul > li > div {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 20px;
+  list-style: none;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+.abilities > ul > li {
+  list-style: none;
+}
+
+.abilities > ul > li > div > p {
+  margin: 0 20px;
+  width: 100%;
+  font-size: 12px;
+  color: #f0f0f0;
+}
+
+.abilities > ul > li > div > img {
+  clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 15%);
+  background: #3a99fe;
+  border: 1.5px solid #fff;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  height: 10vh;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+}
