@@ -24,7 +24,7 @@ app.set('views', './app/views');
 app.use(router);
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log(`http://localhost:${port}`);
 })
 
